@@ -4,11 +4,13 @@ int main()
 {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
-	const int NumSquares = 9;
-	vector<char> board(NumSquares, EMPTY);
 	bool restart = true;
 	while (restart)
 	{
+	const int NumSquares = 9;
+	vector<char> board(NumSquares, EMPTY);
+	
+	
 		inctruction();
 		char human = humanPiece();
 		char computer = opponents(human);
